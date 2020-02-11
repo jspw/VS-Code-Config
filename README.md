@@ -29,6 +29,6 @@ Usage :
 - You nee to give the input in the **input.txt** file
 - output will be shown in the **output.txt** file
 - ##### Bonus : programme status will be shown in the **sys.txt** file 
-
+- people concern about more details such as **binary form** and **disassemble code** can check `tasks(more).json` file
 
 ### Happy Coding with VS Code
