@@ -25,7 +25,7 @@ How to setup :
     
 Usage :
 - Run : 
-  - You will find a **run icon** at the right top  of the window , click here ! or use shortcut **`ctrl+shift+b`** 
+  - Shortcut type : **`ctrl+shift+b`** 
 - You nee to give the input in the **input.txt** file
 - output will be shown in the **output.txt** file
 - ##### Bonus : programme status will be shown in the **sys.txt** file 
