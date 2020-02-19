@@ -1,5 +1,5 @@
 # Make Coding Easy
-###  **VS code Sniffer** to make **competitive programming** easy and **programme ananlysis** ! <br>
+### 1. **VS code task config** to make **competitive programming** easy and **programme ananlysis** ! <br>
 
 This is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
 In this case , you **don't** need to write **input** in the command line or write **fopen** / **close** stuffs , programme will take input from a file **(input.txt)** automatically and give the output in another file **(output.txt)** .<br>
@@ -30,5 +30,10 @@ Usage :
 - output will be shown in the **output.txt** file
 - ##### Bonus : programme status will be shown in the **sys.txt** file 
 - people concern about more details such as **binary form** and **disassemble code** can check `tasks(more).json` file
+
+### 2. VS CODE Snippet :
+  - Download the cpp.json file 
+  - Select User Snippets under **File** > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json** 
+  - copy or replace the cpp.json file with downloaded file and save !
 
 ### Happy Coding with VS Code
