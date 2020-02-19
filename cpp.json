@@ -19,6 +19,10 @@
 			"default"
 		],
 		"body": [
+			"/*\n\nAuthor : 5hifaT\n",
+			"github:https://github.com/jspw\n",
+			"https://stackoverflow.com/story/jspw \n\n",
+			"*/\n\n",
 			"#include<bits/stdc++.h>",
 			"using namespace std;",
 			"#define ll long long",
@@ -49,7 +53,9 @@
 			"	return mn;",
 			"}",
 			"\n",
-			"int main(){",
+			"int main(){\n",
+			"	ios_base::sync_with_stdio(false);",
+			"	cin.tie(NULL);",
 			"\n 	$1",
 			"\n\n",
 			"	return 0;",
