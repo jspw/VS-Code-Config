@@ -45,7 +45,8 @@ Usage :
 - ##### Bonus : programme status will be shown in the **sys.txt** file 
 - people concern about more details such as **binary form** and **disassemble code** can check `tasks(more).json` [file](https://github.com/jspw/VS-Code-Config/blob/master/tasks(more).json)
 
-### 2. VS CODE Snippet :
+### 2. [VS CODE Snippet](https://github.com/jspw/VS-Code-Config/blob/master/cpp.json) : 
+**This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
   - Download the cpp.json file 
   - Select User Snippets under **File** > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json** 
   - copy or replace the cpp.json file with downloaded file and save !
