@@ -1,5 +1,6 @@
 # Make Coding Easy
-### 1. **VS code task config** to make **competitive programming** easy and **programme ananlysis** ! <br>
+**For now the .json file is configured for linux only , windows config is coming soon!**
+### 1. [**VS code task config** to make **competitive programming** easy and **programme ananlysis** !](https://github.com/jspw/VS-Code-Config/blob/master/tasks.json) <br> 
 
 This is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
 In this case , you **don't** need to write **input** in the command line or write **fopen** / **close** stuffs , programme will take input from a file **(input.txt)** automatically and give the output in another file **(output.txt)** .<br>
@@ -9,9 +10,22 @@ You can also find the programme **runtime status** which will help  you to calcu
 pre-requirments : 
 - Visual Studio Code
 - gcc/g++
-- install Code Runner extension by Jun Han (if required)
 - time 
   - install time : ```sudo apt install time```
+  
+More things to do :
+Note : **You just need to do these things only for the first time of your workspace!**
+- Split screen in 3 sections 
+  - split the main section in right
+  - then split the right into down
+- create a file named `input.txt`
+- create a file named `output.txt`
+- open input.txt into the upper right section
+- open output.txt into the lower right section
+
+
+
+A Screenshot of the vs code : ![](https://github.com/jspw/VS-Code-Config/blob/master/vs%20code%20setting.png)
 
 How to setup :
 - Go to Configure Default Build Task...
@@ -29,7 +43,7 @@ Usage :
 - You nee to give the input in the **input.txt** file
 - output will be shown in the **output.txt** file
 - ##### Bonus : programme status will be shown in the **sys.txt** file 
-- people concern about more details such as **binary form** and **disassemble code** can check `tasks(more).json` file
+- people concern about more details such as **binary form** and **disassemble code** can check `tasks(more).json` [file](https://github.com/jspw/VS-Code-Config/blob/master/tasks(more).json)
 
 ### 2. VS CODE Snippet :
   - Download the cpp.json file 
