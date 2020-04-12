@@ -10,15 +10,24 @@
 - install mingw : [link](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/)
 
 - In you pc search for **system environment**
+
 ![search system enbironment](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/search%20system%20enbironment.png)
+
 - go to **Environment variables** 
+
 ![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/environment%20variable.png)
+
 - Go to **system varibale** and **click on path**
+
 ![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/path%20edit%20and%20add%20new.png)
+
 - click edit
+
 - select new 
+
 - paste the link where you mingw bin folder . for me it is `C:\MinGW\bin` 
     - find it there
+    
 - select ok ok for everything
 
 ### Install git 
@@ -27,19 +36,32 @@
 Then 
 
 - Open Vs code
+
 - Open your coding folder `file->open folder`
+
 - press `ctrl+~` and the terminal will be opened below
+
 ![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/vs%20code%20terminal.png)
-- if in the terminal u find that its cmd then click  on cmd and select '`set default sell`' and select `git`
-- Now its saying your shell is bash!
+
+- if in the terminal u find that its **cmd** or **powershell** then click  on **cmd/powershell** and select '`set default sell`' and select `git`
+
+- - Now click on the delete icon and  press `ctrl+~` and its saying your shell is bash!
+
+- if still bash no showing then close vs code and open vs code again
+
 ![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/vs%20code%20terminal.png)
 
 
 ### Run a programme for testing :
 - create a file hello.cpp
 - write code to print hello
-- in terminal (Ctrl+`) use the command `g++ hello.cpp -o test && ./test`
+- in terminal use the command 
+
+        g++ hello.cpp -o test && ./test
+        
+        
 - If you find `hello` then congrats
+- if saying g++ not found then try to close vs code and then oepn vs code again.
 
 ### Setup vs code
 
@@ -66,4 +88,4 @@ Note : **You just need to do these things only for the first time of your worksp
 
 
 ## Now create your file .cpp give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file 
-Happy coding :3 
+# Happy coding :3 
