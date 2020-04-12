@@ -69,7 +69,7 @@ Then
 - select configure task
 - select create task.json from template 
 - select other and new task.json file will be created
-- now copy and paste the my `task.json` file into ur `task.json` file
+- now copy and paste the my `task(windows).json` {[link is here](https://github.com/jspw/VS-Code-Config/blob/master/task(windows).json)}   file into your `task.json` file
 - done
 
 More things to do :
