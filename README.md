@@ -1,5 +1,6 @@
 # Make Coding Easy
-**For now the .json file is configured for linux only , windows config is coming soon!**
+**This tutorial is for linux (debian based) only <br>
+If you are a windows user then check this out [Setup VS Code for windows](https://github.com/jspw/VS-Code-Config/blob/master/readme(windows).md)**
 ### 1. [**VS code task config** to make **competitive programming** easy and **programme ananlysis** !](https://github.com/jspw/VS-Code-Config/blob/master/tasks.json) <br> 
 
 This is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
