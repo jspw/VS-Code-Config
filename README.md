@@ -17,26 +17,26 @@ pre-requirments :
 More things to do :
 Note : **You just need to do these things only for the first time of your workspace!**
 - Split screen in 3 sections 
-  - split the main section in right
-  - then split the right into down
+![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/split%20options.png)
+  - split the main section in right (right mouse click on the .cpp file and u will get the split options)
+  - then split the right into down (same as above)
 - create a file named `input.txt`
 - create a file named `output.txt`
 - open input.txt into the upper right section
 - open output.txt into the lower right section
 
-
-
-A Screenshot of the vs code : ![](https://github.com/jspw/VS-Code-Config/blob/master/vs%20code%20setting.png)
+#### This will be the final look of your vs code 
+![](https://github.com/jspw/VS-Code-Config/blob/master/screenshots/setedup%20vs%20code.png)
 
 How to setup :
 - Go to Configure Default Build Task...
   - In Menu bar 
-    - select Terminal
-    - Configure Default Build Task
-    - will get a  tasks.json file
-    - replace the file with my tasks.json file or copy paste
-    - save 
-    - done 
+     - Clik on terminal (At the top)
+    - select configure task
+    - select create task.json from template (this will create a task.json file in .vscode in your working directory)
+    - select other and new task.json file will be created
+    - now copy and paste the my `task(cpp).json` {[link is here](https://github.com/jspw/VS-Code-Config/blob/master/tasks(cpp).json)}   file into your `task.json` file
+    - done
     
 Usage :
 - Run : 
