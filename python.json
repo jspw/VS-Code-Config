@@ -1,0 +1,20 @@
+{
+	"Author": {
+		"prefix": "inc",
+		"body": [
+			"\n\n#Author : 5hifaT\n",
+			"#Github        : https://github.com/jspw\n",
+			"#Gists         : https://gist.github.com/jspw\n",
+			"#linkedin      : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/\n",
+			"#Stackoverflow : https://stackoverflow.com/story/jspw \n",
+			"#Dev community : https://dev.to/mhshifat\n",
+			"\n\n",
+			"def main():",
+			"	$2\n\n",
+			"if __name__ == \"__main__\":",
+			"	main()\n",
+			
+		],
+		"description": "Author Description"
+	}
+}
