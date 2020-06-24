@@ -1,6 +1,6 @@
 //Author : 5hfT
 //data:Sat 16 May 2020 02:25:10 PM +06
-//Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+//Task:shortcut to run a dart file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
 {
     "version": "2.0.0",
     "tasks": [
