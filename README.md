@@ -4,7 +4,7 @@ If you are a windows user then check this out [Setup VS Code for windows](/readm
 
 
 
-# 1. **VS code task config** to make **competitive programming** easy and **programme ananlysis** ! <br> 
+# 1. **VS code task config** to make **competitive programming** easy and **programme analysis** ! <br> 
 [This](/Config-Files/C&C++/Linux/tasks.json) is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
 
 
