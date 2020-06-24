@@ -1,0 +1,40 @@
+//Author : 5hfT
+//data:Sat 16 May 2020 02:25:10 PM +06
+//Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run",
+            "type": "shell",
+            "command": "",
+            "args": [
+                "python3",
+                "${relativeFile}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "py",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
