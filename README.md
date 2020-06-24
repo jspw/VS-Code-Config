@@ -5,8 +5,7 @@ If you are a windows user then check this out [Setup VS Code for windows](https:
 
 
 # 1. **VS code task config** to make **competitive programming** easy and **programme ananlysis** ! <br> 
-
-[This](/Config-Files/C%20&%20C++/Linux/task.json) is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
+[This](/Config-Files/C%20%26%20C%2B%2B/Linux/task.json) is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
 
 
 In this case , you **don't** need to write **input** in the command line or write **fopen** / **close** stuffs , programme will take input from a file **(input.txt)** automatically and give the output in another file **(output.txt)** .
@@ -49,7 +48,7 @@ Note : **You just need to do these things only for the first time of your worksp
     - select configure task
     - select create task.json from template (this will create a task.json file in .vscode in your working directory)
     - select other and new task.json file will be created
-    - now copy and paste the `task.json` { [link is here](/Config-Files/C%20&%20C++/Linux'/tasks.json) }   file into your `task.json` file
+    - now copy and paste the `task.json` { [link is here](/Config-Files/C%20%26%20C%2B%2B/Linux/tasks.json) }   file into your `task.json` file
     - done
     
 ## Usage :
@@ -61,7 +60,7 @@ Note : **You just need to do these things only for the first time of your worksp
 ![Input Output](images/input&output.png)
 
 - **Bonus** : programme status will be shown in the **sys.txt** file 
-- People concern about more details such as **binary form** and **disassemble code** can check `tasks(extra).json`  file [Link](/Config-Files/C%20&%20C++/Linux/tasks(extra).json)
+- People concern about more details such as **binary form** and **disassemble code** can check `tasks(extra).json`  file [Link](/Config-Files/C%20%26%20C%2B%2B/Linux/tasks(extra).json)
 
 # In the Repository i have also added *config* files for other Programming Languages too :
 - **task.json** files for :
