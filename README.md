@@ -4,7 +4,7 @@ If you are a windows user then check this out [Setup VS Code for windows](/readm
 
 
 
-# 1. **VS code task config** to make **competitive programming** easy and **programme ananlysis** ! <br> 
+# 1. **VS code task config** to make **competitive programming** easy and **programme analysis** ! <br> 
 [This](/Config-Files/C&C++/Linux/tasks.json) is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
 
 
@@ -80,6 +80,9 @@ Note : **You just need to do these things only for the first time of your worksp
   
     - [Windows File](Config-Files/Dart/Windows/tasks.json)
     - [Linux File](Config-Files/Dart/Linux/tasks.json)
+
+
+# Here i have merged all the files which includes tasks.json file for Python, C, C++, Java and Dart for both Windows and Linux !  [Here is the Link](/Config-Files/all-in-one/tasks.json)
 
 # 2. VS CODE Snippet 
 **This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**

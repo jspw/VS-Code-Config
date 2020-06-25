@@ -1,0 +1,245 @@
+//Author : 5hfT
+//data:11th Feb,2020
+//Task:shortcut to run a the file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // For 
+            // C 
+            // and 
+            // C++ 
+            // Programs 
+            "label": "Compile and run Cpp",
+            "type": "shell",
+            "windows": {
+                "command": "",
+                "args": [
+                    "g++",
+                    "${relativeFile}",
+                    "-o",
+                    "test",
+                    "&&",
+                    "./test",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt",
+                    "&&",
+                    "rm",
+                    "*exe"
+                    // // "&&",
+                    // // "test.out"
+                ]
+            },
+            "linux": {
+                "command": "",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${relativeFile}",
+                    "-o",
+                    "${fileBasenameNoExtension}.out",
+                    "&&",
+                    "clear",
+                    "&&",
+                    "timeout",
+                    "10",
+                    "/usr/bin/time",
+                    "-v",
+                    "--output",
+                    "sys.txt",
+                    "./${fileBasenameNoExtension}.out",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt",
+                    "&&",
+                    "rm",
+                    "*out"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            // For 
+            // Dart 
+            // Programs 
+            "label": "Compile and run Dart",
+            "type": "shell",
+            "windows": {
+                "command": "",
+                "args": [
+                    "dart",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "linux": {
+                "command": "",
+                "args": [
+                    "/usr/bin/time",
+                    "-v",
+                    "--output",
+                    "sys.txt",
+                    "timeout",
+                    "5",
+                    "dart",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "py",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        // For 
+        // Dart 
+        // Programs 
+        {
+            "label": "Compile and run Java",
+            "type": "shell",
+            "windows": {
+                "command": "",
+                "args": [
+                    "java",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "linux": {
+                "command": "",
+                "args": [
+                    "/usr/bin/time",
+                    "-v",
+                    "--output",
+                    "sys.txt",
+                    "timeout",
+                    "5",
+                    "java",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "py",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        // For 
+        // Dart 
+        // Programs 
+        {
+            "label": "Compile and run",
+            "type": "shell",
+            "windows": {
+                "command": "",
+                "args": [
+                    "python3",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "linux": {
+                "command": "",
+                "args": [
+                    "/usr/bin/time",
+                    "-v",
+                    "--output",
+                    "sys.txt",
+                    "timeout",
+                    "5",
+                    "python3",
+                    "${relativeFile}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "py",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
