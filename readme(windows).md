@@ -91,6 +91,8 @@ Note : **You just need to do these things only for the first time of your worksp
 ## Now create your file .cpp give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file 
 
 
+**Note :** Make sure your mouse corsor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+
 # 2. VS CODE Snippet 
 **This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
 
