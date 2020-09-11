@@ -1,6 +1,6 @@
 ## How to install and setup vs code for competitive programming with c/c++ for Windows Users
 
-###  install  vs code
+### install vs code
 
 - Download vs code : [Link](https://­code.visualstudio.com)
 - Install in your pc
@@ -13,7 +13,7 @@
 
 ![search system enbironment](/images/search%20system%20enbironment.png)
 
-- go to **Environment variables** 
+- go to **Environment variables**
 
 ![](/images/environment%20variable.png)
 
@@ -23,17 +23,17 @@
 
 - click edit
 
-- select new 
+- select new
 
-- paste the link where you mingw bin folder . for me it is `C:\MinGW\bin` 
-    - find it there
-    
+- paste the link where you mingw bin folder . for me it is `C:\MinGW\bin`
+  - find it there
 - select ok ok for everything
 
-### Install git 
+### Install git
+
 - download link [Link](https://git-scm.com/download/win)
 
-Then 
+Then
 
 - Open Vs code
 
@@ -43,40 +43,40 @@ Then
 
 ![](/images/vs%20code%20terminal.png)
 
-- if in the terminal u find that its **cmd** or **powershell** then click  on **cmd/powershell** and select '`set default sell`' and select `git`
+- if in the terminal u find that its **cmd** or **powershell** then click on **cmd/powershell** and select '`set default sell`' and select `git`
 
-- - Now click on the delete icon and  press `ctrl+~` and its saying your shell is bash!
+- - Now click on the delete icon and press `ctrl+~` and its saying your shell is bash!
 
 - if still bash no showing then close vs code and open vs code again
 
 ![](/images/vs%20code%20terminal.png)
 
-
 ### Run a programme for testing :
+
 - create a file hello.cpp
 - write code to print hello
-- in terminal use the command 
+- in terminal use the command
 
         g++ hello.cpp -o test && ./test
-        
-        
+
 - If you find `hello` then congrats
 - if saying g++ not found then try to close vs code and then oepn vs code again.
 
 ### Setup vs code
 
-- Clik on terminal (At the top bar) 
+- Clik on terminal (At the top bar)
   ![](/images/top_bar.png)
 - select configure task
-- select create task.json from template 
+- select create task.json from template
 - select other and new task.json file will be created
-- now copy and paste the my `task(windows).json` {[link is here](/Config-Files/C&C++/Windows/tasks.json)}   file into your `task.json` file
+- now copy and paste the my `task(windows).json` {[link is here](/Config-Files/C&C++/Windows/tasks.json)} file into your `task.json` file
 - done
 
 More things to do :
 Note : **You just need to do these things only for the first time of your workspace!**
-- Split screen in 3 sections 
-![](/images/split%20options.png)
+
+- Split screen in 3 sections
+  ![](/images/split%20options.png)
   - split the main section in right (right mouse click on the .cpp file and u will get the split options)
   - then split the right into down (same as above)
 - create a file named `input.txt`
@@ -84,49 +84,55 @@ Note : **You just need to do these things only for the first time of your worksp
 - open input.txt into the upper right section
 - open output.txt into the lower right section
 
-#### This will be the final look of your vs code 
+#### This will be the final look of your vs code
+
 ![](/images/final%20look%20%20vs%20code.png)
 
+## Now create a folder and create your file .cpp inside the folder and give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file
 
-## Now create your file .cpp give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file 
+**Note :** **Don't keep the cpp file in the base folder**. I mean you have to **create one or more folders** in the **base folder** (Base folder means **where you opened your vs code** or you can say **vs code wrokspace** folder).and the input and output file should be in the base folder.
 
+##### Folders should be like this or similer :
 
-**Note :** Make sure your mouse corsor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+![](images/folders.png)
 
-# 2. VS CODE Snippet 
-**This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
+##### Not This
 
-  - Select User Snippets under **File** (at Left top bar) > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json** 
-  ![](/images/top_bar.png)
-  - copy or replace the cpp.json file {[Link](</Snippets/cpp.json>)} and save !
+![](images/dont.png)
 
-## Usage :
-- Creating a cpp file if you type **inc**  and press **Tab**  in your keyboard the **snippet** will load as i have set **prefix** as **inc** in my **json file** . (**You can edit as your own !**)
-- This will make programming easy and fast .
+# In the Repository i have also added _config_ files for other Programming Languages too :
 
-
-
-
-# In the Repository i have also added *config* files for other Programming Languages too :
 - **task.json** files for :
 
-  - Python : 
+  - Python :
 
     - [Windows File](Config-Files/Python/Windows/tasks.json)
     - [Linux File](Config-Files/Python/Linux/tasks.json)
 
-
-  - Java : 
+  - Java :
 
     - [Windows File](Config-Files/Java/Windows/tasks.json)
     - [Linux File](Config-Files/Java/Linux/tasks.json)
 
-  - Dart : 
-  
+  - Dart :
+
     - [Windows File](Config-Files/Dart/Windows/tasks.json)
     - [Linux File](Config-Files/Dart/Linux/tasks.json)
 
+**Note :** Make sure your mouse corsor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
 
+# 2. VS CODE Snippet
+
+**This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
+
+- Select User Snippets under **File** (at Left top bar) > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json**
+  ![](/images/top_bar.png)
+- copy or replace the cpp.json file {[Link](/Snippets/cpp.json)} and save !
+
+## Usage :
+
+- Creating a cpp file if you type **inc** and press **Tab** in your keyboard the **snippet** will load as i have set **prefix** as **inc** in my **json file** . (**You can edit as your own !**)
+- This will make programming easy and fast .
 
 - **Snippets** for :
 
@@ -134,6 +140,4 @@ Note : **You just need to do these things only for the first time of your worksp
   - [Dart](/Snippets/dart.json)
   - [Java]() **To be added**
 
-
-
-# Happy coding :3 
+# Happy coding :3
