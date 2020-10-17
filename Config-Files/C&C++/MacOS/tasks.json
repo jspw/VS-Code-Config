@@ -1,7 +1,7 @@
-//Author : Juanjo12x
+// Author : Jota12x
 // Based on: 5hfT
-//data:17th Oct,2020
-//Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time (Macbook)
+// Date:17th Oct,2020
+// Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time (Macbook)
 {
   "version": "2.0.0",
   "tasks": [
