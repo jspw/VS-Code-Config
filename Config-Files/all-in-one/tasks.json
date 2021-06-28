@@ -134,7 +134,7 @@
             }
         },
         // For 
-        // Dart 
+        // java 
         // Programs 
         {
             "label": "Compile and run Java",
@@ -159,12 +159,19 @@
                     "sys.txt",
                     "timeout",
                     "5",
-                    "java",
+                    "javac",
                     "${relativeFile}",
+                    "&&",
+                    "java",
+                    "${fileBasenameNoExtension}",
                     "<",
                     "input.txt",
                     ">",
-                    "output.txt"
+                    "output.txt",
+                    "&&",
+                    "rm",
+                    "-rf",
+                    "*.class"
                 ]
             },
             "group": {
@@ -188,7 +195,7 @@
             }
         },
         // For 
-        // Dart 
+        // python 
         // Programs 
         {
             "label": "Compile and run",
