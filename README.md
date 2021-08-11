@@ -1,7 +1,7 @@
 # Make Coding Easy
 
 **This tutorial is for linux (debian based) only <br>
-If you are a windows user then check this out [Setup VS Code for windows](</readme(windows).md>)**
+If you are a windows user then check this out [Setup VS Code for windows](windows.md)**
 
 # 1. **VS code task config** to make **competitive programming** easy and **programme analysis** ! <br>
 

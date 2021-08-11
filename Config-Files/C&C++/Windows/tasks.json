@@ -1,5 +1,5 @@
 //Author : 5hfT
-//data:11th Feb,2020
+//date:11th Feb,2020
 //Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
 {
   "version": "2.0.0",
@@ -9,26 +9,26 @@
       "type": "shell",
       "command": "",
       "args": [
-        "cp",
+        "copy",
         "${file}",
-        "${workspaceFolder}",
+        "${workspaceFolder}\\jspwTest.cpp",
         "&&",
         "g++",
-        "${fileBasename}",
+        "jspwTest.cpp",
         "-o",
-        "test.out",
+        "jspwTest",
         "&&",
-        "./test.out",
+        "jspwTest",
         "<",
         "input.txt",
         ">",
         "output.txt",
         "&&",
-        "rm",
-        "*out",
+        "del",
+        "jspwTest.exe",
         "&&",
-        "rm",
-        "${fileBasename}"
+        "del",
+        "jspwTest.cpp"
       ],
       "group": {
         "kind": "build",
