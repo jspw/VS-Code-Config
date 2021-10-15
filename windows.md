@@ -1,48 +1,44 @@
-# VS-Code Config
+# VS Code Config
 
-## About
-This repository is about how to install and setup vs code for competitive programming with c/c++ for Windows Users.
+## Intro
+This repository is about how to install and setup vs code for **competitive programming (actually easy input & output)** with **c/c++** for **windows** users.
 
-**Note for old users :** There were some problems with windows and bash, so i had to convert the `tasks.json` file for windows cmd. So If you are using this new json file then, please select bash as default  Profile
+**Note for old users of this repo :** There were some problems with bash in windows, so i had to convert the `tasks.json` file for cmd. If you are using this new [json file](./Config-Files/C&C++/Windows/tasks.json) then, please select **cmd** as default  profile for vscode terminal.
 
-## Usage
+## How To Configure
+
+**Note :** You just need to do these things only for the first time of your workspace!
 
 ### Pre-requirments
+
 Need VS Code and C++ Compiler mingw installed in your windows pc.
 
-#### Install vs code
+#### Installing VS Code
 
-- Download vs code : [Link](https://­code.visualstudio.com)
-- Install in your pc
+- [Download & Install](https://­code.visualstudio.com)
 
-#### Install mingw
+#### Installing mingw
 
-[link](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/)
+- [Download & Install](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/)
 
-##### Setup Environment For C/C++
+### Seting Up Environment For C/C++
 
 - In you pc search for **system environment**
 
-![search system enbironment](/images/search%20system%20enbironment.png)
+  ![search system enbironment](/images/search%20system%20enbironment.png)
 
-- Go to **Environment variables**
+- Go to **Environment variables** (on advance section)
 
-![](/images/environment%20variable.png)
+  ![](/images/environment%20variable.png)
 
-- Go to **system varibale** and **click on path**
+- On **system varibale** section, select **path**. Then click edit, select new & paste the link of  your **mingw bin** folder. (Most probably its  in `C:\MinGW\bin`, find it. For me it is `C:\MinGW\bin`)
 
-![](/images/path%20edit%20and%20add%20new.png)
+  ![](/images/path%20edit%20and%20add%20new.png)
 
-- Click edit
+- Select ok>ok>apply>ok for everything.
 
-- Select New
 
-- Paste the link where you mingw bin folder
-  For me it is `C:\MinGW\bin`
-  - find it there
-- Select ok ok for everything
-
-##### Test MinGW path setup
+#### Test MinGW path setup is working
 
 - Open cmd and type gcc and hit enter
 - If you find 
@@ -55,7 +51,7 @@ Need VS Code and C++ Compiler mingw installed in your windows pc.
 
   or something like that then congrats :3 
 
-- If you cmd says : 
+- else if you cmd says : 
 
   ```
   'gcc' is not recognized as an internal or external command,
@@ -63,53 +59,58 @@ Need VS Code and C++ Compiler mingw installed in your windows pc.
 
   ```
 
-  Then go back to the [Install mingw](InstallMingw) and check everything again.
+  Then go back to the [Install mingw](#installing-mingw) and check everything again.
 
 
 ### Setup VS Code
 
-- Open VS-Code
-- Open your coding folder (From Menu bar :  `file->open folder` )
- ![](/images/top_bar.png)
+- In VS Code, Open your coding folder (From Menu bar :  `file->open folder` )
+  ![](/images/top_bar.png)
+
 - Clik on terminal (At the top Menu bar)
   ![](/images/top_bar.png)
-- select `configure task..`
-- select `create task.json from template`
-- select `others` and it will create a new `tasks.json` file in your default folder under `.vscode` folder. The folder structure will be like this : 
+
+- Select `configure task..`
+- Select `create task.json from template`
+- Select `others` and it will create a new `tasks.json` file in your default folder under `.vscode` folder. The folder structure will be like this : 
 
 ```.tree
+
 Your Default Folder (Workspace)
 ├───.vscode
-│   tasks.json
+│      ─── tasks.json
 
 ```
 
-- now replace [my tasks.json](./Config-Files/C&C++/Windows/tasks.json) file with your `tasks.json` file
-- done :D
+- Now replace or copy-paste full [tasks.json of the repository](./Config-Files/C&C++/Windows/tasks.json) with your `tasks.json` file.
+
+- Done :D
 
 #### More things to do
-Note : **You just need to do these things only for the first time of your workspace!**
 
 - Split screen in 3 sections
-  - split the main section in right (right mouse click on the .cpp file and u will get the split options)
-  - then split the right into down (same as below)
+  - split the main section in right (right click of mouse on a file and u will get the split options)
+  - then split the right section into up-down (same as below)
   ![](/images/split%20options.png)
 - create a file named `input.txt`
 - create a file named `output.txt`
 - open input.txt into the upper right section
 - open output.txt into the lower right section
 
-This will be the final look of your vs code
+This will be the final look of your vs code : 
 
   ![](/images/final%20look%20%20vs%20code.png)
 
-Now create your file .cpp and give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file
+
+## How To Use
+
+Create your .cpp file, write code and give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file.
 
 **Note :** Make sure your mouse corsor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
 
 In the Repository i have also added _config_ files for other Programming Languages too :
 
-- **task.json** files for :
+- **tasks.json** files for :
 
   - Python :
 
@@ -131,19 +132,22 @@ In the Repository i have also added _config_ files for other Programming Languag
 
 **This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
 
-- Select User Snippets under **File** (at Left top bar) > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json**
+
+## Setup
+
+- Select User Snippets (at top menubar, File/Code [for **mac**] > Perferences > User Snippets) and then select **cpp.json**.
   ![](/images/top_bar.png)
-- copy or replace the cpp.json file {[Link](/Snippets/cpp.json)} and save !
+- copy or replace the  [cpp.json file](./Snippets/cpp.json) and save.
 
 ## Usage :
 
 - Creating a cpp file if you type **inc** and press **Tab** in your keyboard the **snippet** will load as i have set **prefix** as **inc** in my **json file** . (**You can edit as your own !**)
 - This will make programming easy and fast .
 
-- **Snippets** for :
+## Snippets
 
   - [Python](/Snippets/python.json)
   - [Dart](/Snippets/dart.json)
   - [Java]() **To be added**
 
-# Happy coding :3
+Happy coding :3
