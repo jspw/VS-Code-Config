@@ -3,7 +3,7 @@
 ## Intro
 This repository is about how to install and setup vs code for **competitive programming (actually easy input & output)** with **c/c++** for **windows** users.
 
-**Note for old users of this repo :** There were some problems with bash in windows, so i had to convert the `tasks.json` file for cmd (Command Prompt). If you are using this new [json file](./Config-Files/C&C++/Windows/tasks.json) then, please select **cmd** as default  profile for vscode terminal.
+**Note for old users of this repo :** There were some problems with bash in windows, so i had to convert the `tasks.json` file for cmd (Command Prompt). If you are using this new [json file](./Config-Files/C&C++/Windows/tasks.json) then, please select **cmd** as default  profile for vscode terminal. [check this out](#terminal-setup)
 
 ## How To Configure
 
@@ -84,7 +84,8 @@ Your Default Folder (Workspace)
 
 - Now replace or copy-paste full [tasks.json of the repository](./Config-Files/C&C++/Windows/tasks.json) with your `tasks.json` file.
 
-#### Select **Command Prompt** as default terminal in vscode (If its not set already)
+#### Terminal Setup 
+(Select **Command Prompt** as default terminal in vscode (If its not set already))
 
     ![](./images/terminal_window.png)
 
