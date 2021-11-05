@@ -3,7 +3,7 @@
 ## Intro
 This repository is about how to install and setup vs code for **competitive programming (actually easy input & output)** with **c/c++** for **windows** users.
 
-**Note for old users of this repo :** There were some problems with bash in windows, so i had to convert the `tasks.json` file for cmd. If you are using this new [json file](./Config-Files/C&C++/Windows/tasks.json) then, please select **cmd** as default  profile for vscode terminal.
+**Note for old users of this repo :** There were some problems with bash in windows, so i had to convert the `tasks.json` file for cmd (Command Prompt). If you are using this new [json file](./Config-Files/C&C++/Windows/tasks.json) then, please select **cmd** as default  profile for vscode terminal.
 
 ## How To Configure
 
@@ -84,6 +84,19 @@ Your Default Folder (Workspace)
 
 - Now replace or copy-paste full [tasks.json of the repository](./Config-Files/C&C++/Windows/tasks.json) with your `tasks.json` file.
 
+- Select **Command Prompt** as default terminal in vscode (If its not set already)
+  ![](./images/terminal_window.png)
+  - open terminal in vs code
+  - at the right side of terminal window section there are some options like default terminal name (mine is already cmd), + v, split terminal sign,delete, ^, x. Select `v` beside `+` sign.
+    ![](./images/terminal_options.png)
+  - select `select default profile`
+    ![](./images/select_default_profile.png)
+  - a select prompt will pop up at the top and select `command prompt`
+   ![](./images/profile_options.png)
+  - close terminal clicking on delete icon
+     ![](./images/delete_terminal.png)
+  - then reopen terminal and you will find cmd as your default terminal. 
+    ![](./images/default_terminal_cmd.png)
 - Done :D
 
 #### More things to do
