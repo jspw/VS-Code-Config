@@ -15,7 +15,7 @@
             "type": "shell",
             "windows": {
                 "command": "",
-                "args" :  [
+                "args": [
                     "copy",
                     "${file}",
                     "${workspaceFolder}\\jspwTest.cpp",
@@ -36,7 +36,7 @@
                     "&&",
                     "del",
                     "jspwTest.cpp"
-                  ],
+                ],
             },
             "linux": {
                 "command": "",
@@ -240,6 +240,55 @@
             },
             "problemMatcher": {
                 "owner": "py",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        // For 
+        // go 
+        // Programs 
+        {
+            "label": "Compile and run go program",
+            "type": "shell",
+            "linux": {
+                "command": "This is business",
+                "args": [
+                    "go",
+                    "build",
+                    "${relativeFile}",
+                    "&&",
+                    "timeout",
+                    "10",
+                    "/usr/bin/time",
+                    "-v",
+                    "--output",
+                    "sys.txt",
+                    "./${fileBasenameNoExtension}",
+                    "<",
+                    "input.txt",
+                    ">",
+                    "output.txt",
+                    "&&",
+                    "rm",
+                    "${fileBasenameNoExtension}"
+                ],
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "go",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"
