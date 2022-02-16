@@ -1,33 +1,39 @@
 //Author : 5hfT
-//data:Sat 16 May 2020 02:25:10 PM +06
-//Task:shortcut to run a dart file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+//data:Wed 16 Feb 2022 02:02:56 PM +06
+//Task:shortcut to run a go file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time
 {
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compile and run Dart",
+            "label": "Compile and run Go program",
             "type": "shell",
             "command": "",
             "args": [
+                "go",
+                "build",
+                "${relativeFile}",
+                "&&",
+                "timeout",
+                "10",
                 "/usr/bin/time",
                 "-v",
                 "--output",
                 "sys.txt",
-                "timeout",
-                "5",
-                "dart",
-                "${relativeFile}",
+                "./${fileBasenameNoExtension}",
                 "<",
                 "input.txt",
                 ">",
-                "output.txt"
+                "output.txt",
+                "&&",
+                "rm",
+                "${fileBasenameNoExtension}"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "problemMatcher": {
-                "owner": "py",
+                "owner": "go",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"

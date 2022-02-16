@@ -42,6 +42,7 @@ Note : **You just need to do these things only for the first time of your worksp
 ### How to setup :
 
 - Go to Configure Default Build Task...
+
   - In Menu bar
 
     - Clik on Terminal (At the left top bar )
@@ -84,6 +85,9 @@ Note : **You just need to do these things only for the first time of your worksp
 
   - [Windows File](Config-Files/Dart/Windows/tasks.json)
   - [Linux File](Config-Files/Dart/Linux/tasks.json)
+
+* Go :
+  - [Linux File](Config-Files/go/Linux/tasks.json)
 
 # Here i have merged all the files which includes tasks.json file for Python, C, C++, Java and Dart for both Windows and Linux ! [Here is the Link](/Config-Files/all-in-one/tasks.json)
 
