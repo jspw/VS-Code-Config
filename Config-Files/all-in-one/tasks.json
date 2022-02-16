@@ -261,7 +261,7 @@
             "label": "Compile and run go program",
             "type": "shell",
             "linux": {
-                "command": "This is business",
+                "command": "",
                 "args": [
                     "go",
                     "build",
