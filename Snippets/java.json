@@ -1,0 +1,28 @@
+// Author : Mehedi Hasan Shifat
+// github:https://github.com/jspw
+// linkedin : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/
+// stackoverflow : https://stackoverflow.com/story/jspw
+{
+	"Main Function": {
+		"prefix": [
+			"init class",
+			"default"
+		],
+		"body": [
+			"/*\n\nAuthor : Mehedi Hasan Shifat\n",
+			"github:https://github.com/jspw\n",
+			"linkedin : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/\n",
+			"stackoverflow : https://stackoverflow.com/story/jspw \n\n",
+			"*/\n\n\n",
+			"import java.util.Scanner;\n\n",
+			"\tpublic class ${TM_FILENAME_BASE} {\n",
+			"\tpublic static void main(String[] args) {\n",
+			"\t\tScanner in = new Scanner(System.in);\n",
+			"\t\t${0:}\n",
+			"}\n",
+			"}\n",
+			"",
+		],
+		"description": "This is a c++ sniffpet",
+	}
+}
