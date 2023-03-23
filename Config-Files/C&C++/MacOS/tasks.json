@@ -1,52 +1,51 @@
 // Author : Jota12x
-// Based on: 5hfT
-// Date:17th Oct,2020
-// Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time (Macbook)
+// Based on : 5hfT
+// Date : 17th Oct,2020
+// Updated At : Fri Mar 24 03:09:54 +06 2023
+// Task : shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time (Macbook)
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Compile and run",
-      "type": "shell",
-      "command": "",
-      "args": [
-        "g++",
-        "-g",
-        "${relativeFile}",
-        "-o",
-        "${fileBasenameNoExtension}.out",
-        "&&",
-        "/usr/bin/time",
-        "-lp",
-        "./${fileBasenameNoExtension}.out",
-        "<",
-        "input.txt",
-        ">",
-        "output.txt",
-        "&&",
-        "rm",
-        "*out",
-        "&&",
-        "rm",
-        "-r",
-        "*out.dSYM"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceRoot}"],
-        "pattern": {
-          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run C program",
+            "type": "shell",
+            "command": "",
+            "args": [
+                "g++",
+                "${relativeFile}",
+                "-o",
+                "${fileBasenameNoExtension}.out",
+                "&&",
+                "/usr/bin/time",
+                "-lp",
+                "./${fileBasenameNoExtension}.out",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "&&",
+                "rm",
+                "*out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }
