@@ -28,6 +28,9 @@
                 "rm",
                 "${fileBasenameNoExtension}"
             ],
+            "presentation": {
+                "reveal": "never"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true

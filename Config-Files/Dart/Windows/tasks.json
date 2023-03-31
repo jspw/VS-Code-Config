@@ -14,8 +14,11 @@
                 "<",
                 "input.txt",
                 ">",
-                "output.txt",
+                "output.txt"
             ],
+            "presentation": {
+                "reveal": "never"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true

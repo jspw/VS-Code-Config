@@ -31,13 +31,19 @@
         "-r",
         "*out.dSYM"
       ],
+      "presentation": {
+        "reveal": "never"
+      },
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": {
         "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceRoot}"],
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
+        ],
         "pattern": {
           "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
           "file": 1,
