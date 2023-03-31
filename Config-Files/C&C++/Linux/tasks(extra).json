@@ -1,67 +1,69 @@
-//Author : 5hfT
-//data:11th Feb,2020
-//Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+// Author : 5hfT
+// data:11th Feb,2020
+// Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Compile and run",
-        "type": "shell",
-        "command": "",
-        "args": [
-          "g++",
-          "-g",
-          "${relativeFile}",
-          "-o",
-          "${fileBasenameNoExtension}.out",
-          "&&",
-          "clear",
-          "&&",
-          "timeout",
-          "10",
-          "/usr/bin/time",
-          "-v",
-          "--output",
-          "sys.txt",
-          "./${fileBasenameNoExtension}.out",
-          "<",
-          "input.txt",
-          ">",
-          "output.txt",
-          "&&",
-          "nm",
-          "${fileBasenameNoExtension}.out",
-          ">",
-          "binary.txt",
-          "&&",
-          "objdump",
-          "-D",
-          "${fileBasenameNoExtension}.out",
-          "|",
-          "less",
-          ">",
-          "disassemble.txt",
-          "&&",
-          "rm",
-          "*out"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile and run",
+      "type": "shell",
+      "command": "",
+      "args": [
+        "g++",
+        "-g",
+        "${relativeFile}",
+        "-o",
+        "${fileBasenameNoExtension}.out",
+        "&&",
+        "clear",
+        "&&",
+        "timeout",
+        "10",
+        "/usr/bin/time",
+        "-v",
+        "--output",
+        "sys.txt",
+        "./${fileBasenameNoExtension}.out",
+        "<",
+        "input.txt",
+        ">",
+        "output.txt",
+        "&&",
+        "nm",
+        "${fileBasenameNoExtension}.out",
+        ">",
+        "binary.txt",
+        "&&",
+        "objdump",
+        "-D",
+        "${fileBasenameNoExtension}.out",
+        "|",
+        "less",
+        ">",
+        "disassemble.txt",
+        "&&",
+        "rm",
+        "*out"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
         ],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": {
-          "owner": "cpp",
-          "fileLocation": ["relative", "${workspaceRoot}"],
-          "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-            "file": 1,
-            "line": 2,
-            "column": 3,
-            "severity": 4,
-            "message": 5
-          }
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
         }
       }
-    ]
-  }
-  
+    }
+  ]
+}

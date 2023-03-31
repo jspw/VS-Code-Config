@@ -30,6 +30,9 @@
         "del",
         "jspwTest.cpp"
       ],
+      "presentation": {
+        "reveal": "never"
+      },
       "group": {
         "kind": "build",
         "isDefault": true,
