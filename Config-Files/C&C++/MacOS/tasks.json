@@ -1,17 +1,17 @@
 // Author : Jota12x
-// Based on: 5hfT
-// Date:17th Oct,2020
-// Task:shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time (Macbook)
+// Based on : 5hfT
+// Date : 17th Oct,2020
+// Updated At : Fri Mar 24 03:09:54 +06 2023
+// Task : shortcut to run a cpp file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time (MacBook)
 {
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compile and run",
+      "label": "Compile and run C program",
       "type": "shell",
       "command": "",
       "args": [
         "g++",
-        "-g",
         "${relativeFile}",
         "-o",
         "${fileBasenameNoExtension}.out",
@@ -25,11 +25,7 @@
         "output.txt",
         "&&",
         "rm",
-        "*out",
-        "&&",
-        "rm",
-        "-r",
-        "*out.dSYM"
+        "${fileBasenameNoExtension}.out"
       ],
       "presentation": {
         "reveal": "never"
