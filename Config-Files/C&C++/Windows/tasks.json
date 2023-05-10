@@ -10,7 +10,7 @@
       "command": "",
       "args": [
         "copy",
-        "${file}",
+        "\"${file}\"",
         "${workspaceFolder}\\jspwTest.cpp",
         "&&",
         "g++",
