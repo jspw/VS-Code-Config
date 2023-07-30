@@ -1,7 +1,7 @@
-//Author : 5hfT
+//Author : Mehedi Hasan Shifat
 //data:11th Feb,2020
 //updated : 17th Oct, 2021
-//Task:shortcut to run a the file which will take input and show output of the programme automatically with programme runtime status such as memory comsume and execution time
+//Task:shortcut to run a the file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time
 {
     "version": "2.0.0",
     "tasks": [
@@ -284,7 +284,7 @@
                     "&&",
                     "rm",
                     "${fileBasenameNoExtension}"
-                ],
+                ]
             },
             "group": {
                 "kind": "build",
