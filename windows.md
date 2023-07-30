@@ -10,7 +10,7 @@ This repository is about how to install and setup vs code for **competitive prog
 
 **Note :** You just need to do these things only for the first time of your workspace!
 
-### Pre-requirments
+### Pre-requirements
 
 Need VS Code and C++ Compiler mingw installed in your windows pc.
 
@@ -22,41 +22,39 @@ Need VS Code and C++ Compiler mingw installed in your windows pc.
 
 - [Download & Install](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/)
 
-### Seting Up Environment For C/C++
+### Setting Up Environment For C/C++
 
 - In you pc search for **system environment**
 
-  ![search system enbironment](/images/search%20system%20enbironment.png)
+  ![search system environment](/images/search%20system%20enbironment.png)
 
 - Go to **Environment variables** (on advance section)
 
-  ![](/images/environment%20variable.png)
+  ![Environment Variables](/images/environment%20variable.png)
 
-- On **system varibale** section, select **path**. Then click edit, select new & paste the link of your **mingw bin** folder. (Most probably its in `C:\MinGW\bin`, find it. For me it is `C:\MinGW\bin`)
+- On **system variable** section, select **path**. Then click edit, select new & paste the link of your **mingw bin** folder. (Most probably its in `C:\MinGW\bin`, find it. For me it is `C:\MinGW\bin`)
 
-  ![](/images/path%20edit%20and%20add%20new.png)
+  ![Path Select](/images/path%20edit%20and%20add%20new.png)
 
 - Select ok>ok>apply>ok for everything.
 
 #### Test MinGW path setup is working
 
-- Open cmd and type gcc and hit enter
+- Open `cmd` (can search in the search section) and type `gcc` and hit enter
 - If you find
 
-  ```
+  ```txt
   gcc: fatal error: no input files
   compilation terminated.
-
   ```
 
   or something like that then congrats :3
 
 - else if you cmd says :
 
-  ```
+  ```txt
   'gcc' is not recognized as an internal or external command,
   operable program or batch file.
-
   ```
 
   Then go back to the [Install mingw](#installing-mingw) and check everything again.
@@ -64,16 +62,16 @@ Need VS Code and C++ Compiler mingw installed in your windows pc.
 ### Setup VS Code
 
 - In VS Code, Open your coding folder (From Menu bar : `file->open folder` )
-  ![](/images/top_bar.png)
+  ![File | Menu](/images/top_bar.png)
 
-- Clik on terminal (At the top Menu bar)
-  ![](/images/top_bar.png)
+- Click on terminal (At the top Menu bar)
+  ![Terminal | Menu](/images/top_bar.png)
 
 - Select `configure task..`
 - Select `create task.json from template`
 - Select `others` and it will create a new `tasks.json` file in your default folder under `.vscode` folder. The folder structure will be like this :
 
-```.tree
+```tree
 
 Your Default Folder (Workspace)
 ├───.vscode
@@ -87,28 +85,28 @@ Your Default Folder (Workspace)
 
 (Select **Command Prompt** as default terminal in vscode (If its not set already))
 
-    ![](./images/terminal_window.png)
+  ![CMD](./images/terminal_window.png)
 
 - open terminal in vs code
 
 - at the right side of terminal window section there are some options like default terminal name (mine is already cmd), + v, split terminal sign,delete, ^, x. Select `v` beside `+` sign.
 
-  ![](./images/terminal_options.png)
+  ![Terminal Options](./images/terminal_options.png)
 
 - select `select default profile`
 
-  ![](./images/select_default_profile.png)
+  ![Default Profile Selection](./images/select_default_profile.png)
 
 - a select prompt will pop up at the top and select `command prompt`
-  ![](./images/profile_options.png)
+  ![Profile Options](./images/profile_options.png)
 
 - close terminal clicking on delete icon
 
-  ![](./images/delete_terminal.png)
+  ![Terminal Delete](./images/delete_terminal.png)
 
 - then reopen terminal and you will find cmd as your default terminal.
 
-  ![](./images/default_terminal_cmd.png)
+  ![CMD as Default Terminal](./images/default_terminal_cmd.png)
 
 - Done :D
 
@@ -117,7 +115,7 @@ Your Default Folder (Workspace)
 - Split screen in 3 sections
   - split the main section in right (right click of mouse on a file and u will get the split options)
   - then split the right section into up-down (same as below)
-    ![](/images/split%20options.png)
+    ![Split Options](/images/split%20options.png)
 - create a file named `input.txt`
 - create a file named `output.txt`
 - open input.txt into the upper right section
@@ -125,15 +123,21 @@ Your Default Folder (Workspace)
 
 This will be the final look of your vs code :
 
-![](/images/final%20look%20%20vs%20code.png)
+![Final Look of VS-Code](/images/final%20look%20%20vs%20code.png)
 
 ## How To Use
 
-Create your .cpp file, write code and give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file.
+Open your workspace **Folder** where you will code your shits.
 
-**Note :** Make sure your mouse corsor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+Create your `.cpp` file, write code and give inputs in input.txt and press `Ctrl+Shift+b` and your output will be in the output.txt file.
 
-In the Repository i have also added _config_ files for other Programming Languages too :
+**Note :** Make sure your mouse cursor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+
+***New* Note :** I have came to know that some new comers or vscode users sometimes just open the file in vscode instead of opening as folder and press `Ctrl+Shift+b` which will not work. So please open vscode in your desired folder.
+Open VS Code, then you can go to `Menu -> File -> Open Folder ...`
+![FILE | MENU](/images/top_bar.png)
+
+In the Repository i have also added *config* files for other Programming Languages too :
 
 - **tasks.json** files for :
 
@@ -157,23 +161,24 @@ In the Repository i have also added _config_ files for other Programming Languag
 
 # VS CODE Snippet
 
-**This one is made for my personal usage ,you can add functions as you wish and edit my name and doc**
+**This one is made for my personal usage, you can add functions as you wish and edit my name and doc.**
 
 ## Setup
 
-- Select User Snippets (at top menubar, File/Code [for **mac**] > Perferences > User Snippets) and then select **cpp.json**.
-  ![](/images/top_bar.png)
+- Select User Snippets (at top menubar, File/Code [for **mac**] > Preferences > User Snippets) and then select **cpp.json**.
+  ![Top Bar](/images/top_bar.png)
 - copy or replace the [cpp.json file](./Snippets/cpp.json) and save.
 
-## Usage :
+## Usage
 
 - Creating a cpp file if you type **inc** and press **Tab** in your keyboard the **snippet** will load as i have set **prefix** as **inc** in my **json file** . (**You can edit as your own !**)
 - This will make programming easy and fast .
 
 ## Snippets
 
+- [C++](/Snippets/cpp.json)
 - [Python](/Snippets/python.json)
 - [Dart](/Snippets/dart.json)
-- [Java]() **To be added**
+- [Java](/Snippets/java.json)
 
 Happy coding :3

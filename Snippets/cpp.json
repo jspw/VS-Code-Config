@@ -1,25 +1,11 @@
 {
-	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-
 	"Default cpp formate": {
 		"prefix": [
 			"include",
 			"default"
 		],
 		"body": [
-			"/*\n\nAuthor : 5hifaT\n",
+			"/*\n\nAuthor : Mehedi Hasan Shifat\n",
 			"github:https://github.com/jspw\n",
 			"linkedin : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/\n",
 			"Stackoverflow : https://stackoverflow.com/story/jspw \n\n",
@@ -43,7 +29,6 @@
 			"	return a>b;",
 			"}",
 			"\n",
-			
 			"//find the maximum element of a array",
 			"ll max_of_array(ll a[],ll n){",
 			"	ll mx=a[0];",
@@ -52,9 +37,7 @@
 			"	}",
 			"	return mx;",
 			"}",
-			
 			"\n",
-			
 			"//find the minimum element of a array",
 			"ll min_of_array(ll a[],ll n){",
 			"	ll mn=a[0];",
@@ -64,7 +47,6 @@
 			"	return mn;",
 			"}",
 			"\n",
-
 			"bool isPrime(ll n){",
 			"	if(n==1) return false;",
 			"	if(n==2) return true;",
@@ -74,7 +56,6 @@
 			
 			"	return true;",
 			"}\n",
-
 			"ll gcd(ll a, ll b)",
 			"{",
 			"	if (b == 0)",
@@ -85,7 +66,6 @@
 			"{",
 			"	return (a * b) / gcd(a, b);",
 			"}\n",
-
 			"\n",
 			"int main(){\n",
 			"	ios_base::sync_with_stdio(false);",
@@ -94,17 +74,17 @@
 			"\n\n",
 			"	return 0;",
 			"}\n",
-			"",
-
-		
+			""
 		],
-		"description": "This is a c++ sniffpet",
-
-		
+		"description": "This is a c++ snippet"
 	},
-	"for loop":{
+	"for loop": {
 		"prefix": "forl",
-		"body": ["for($1 $2 = $3 ; $2 < $4 ; $2++)","{","	${0:/* code */}","}"],
+		"body": [
+			"for($1 $2 = $3 ; $2 < $4 ; $2++)",
+			"{","	${0:/* code */}",
+			"}"
+		],
 		"description": "For Loop"
 	}
 }
