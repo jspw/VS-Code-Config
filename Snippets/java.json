@@ -1,7 +1,3 @@
-// Author : Mehedi Hasan Shifat
-// github:https://github.com/jspw
-// linkedin : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/
-// stackoverflow : https://stackoverflow.com/story/jspw
 {
 	"Main Function": {
 		"prefix": [
@@ -21,7 +17,7 @@
 			"\t\t${0:}\n",
 			"}\n",
 			"}\n",
-			"",
+			""
 		],
 		"description": "This is a c++ sniffpet",
 	}

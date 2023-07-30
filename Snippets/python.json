@@ -2,7 +2,7 @@
 	"Author": {
 		"prefix": "inc",
 		"body": [
-			"\n\n#Author : 5hifaT\n",
+			"\n\n#Author : Mehedi Hasan Shifat\n",
 			"#Github        : https://github.com/jspw\n",
 			"#Gists         : https://gist.github.com/jspw\n",
 			"#linkedin      : https://www.linkedin.com/in/mehedi-hasan-shifat-2b10a4172/\n",
@@ -13,7 +13,6 @@
 			"	$2\n\n",
 			"if __name__ == \"__main__\":",
 			"	main()\n",
-			
 		],
 		"description": "Author Description"
 	}
