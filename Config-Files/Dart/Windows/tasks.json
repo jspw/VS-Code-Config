@@ -24,7 +24,7 @@
                 "isDefault": true
             },
             "problemMatcher": {
-                "owner": "py",
+                "owner": "dart",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"
