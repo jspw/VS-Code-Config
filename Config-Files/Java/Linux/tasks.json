@@ -17,6 +17,8 @@
                 "5",
                 "javac",
                 "${relativeFile}",
+                "-d",
+                "${workspaceFolder}",
                 "&&",
                 "java",
                 "${fileBasenameNoExtension}",
@@ -37,7 +39,7 @@
                 "isDefault": true
             },
             "problemMatcher": {
-                "owner": "py",
+                "owner": "java",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"
