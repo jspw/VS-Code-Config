@@ -33,7 +33,7 @@
         "*out"
       ],
       "presentation": {
-        "reveal": "never"
+        "reveal": "silent"
       },
       "group": {
         "kind": "build",

@@ -23,7 +23,7 @@
                 "output.txt"
             ],
             "presentation": {
-                "reveal": "never"
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
