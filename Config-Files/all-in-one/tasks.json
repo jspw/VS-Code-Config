@@ -36,12 +36,11 @@
                     "&&",
                     "del",
                     "jspwTest.cpp"
-                ],
+                ]
             },
             "linux": {
-                "command": "",
+                "command": "g++",
                 "args": [
-                    "g++",
                     "-g",
                     "${relativeFile}",
                     "-o",
@@ -95,9 +94,8 @@
             "label": "Compile and run Dart",
             "type": "shell",
             "windows": {
-                "command": "",
+                "command": "dart",
                 "args": [
-                    "dart",
                     "${relativeFile}",
                     "<",
                     "input.txt",
@@ -106,9 +104,8 @@
                 ]
             },
             "linux": {
-                "command": "",
+                "command": "/usr/bin/time",
                 "args": [
-                    "/usr/bin/time",
                     "-v",
                     "--output",
                     "sys.txt",
@@ -121,6 +118,9 @@
                     ">",
                     "output.txt"
                 ]
+            },
+            "presentation": {
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
@@ -149,9 +149,8 @@
             "label": "Compile and run Java",
             "type": "shell",
             "windows": {
-                "command": "",
+                "command": "java",
                 "args": [
-                    "java",
                     "${relativeFile}",
                     "<",
                     "input.txt",
@@ -160,9 +159,8 @@
                 ]
             },
             "linux": {
-                "command": "",
+                "command": "/usr/bin/time",
                 "args": [
-                    "/usr/bin/time",
                     "-v",
                     "--output",
                     "sys.txt",
@@ -182,6 +180,9 @@
                     "-rf",
                     "*.class"
                 ]
+            },
+            "presentation": {
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
@@ -210,9 +211,8 @@
             "label": "Compile and run Python",
             "type": "shell",
             "windows": {
-                "command": "",
+                "command": "python3",
                 "args": [
-                    "python3",
                     "${relativeFile}",
                     "<",
                     "input.txt",
@@ -221,9 +221,8 @@
                 ]
             },
             "linux": {
-                "command": "",
+                "command": "/usr/bin/time",
                 "args": [
-                    "/usr/bin/time",
                     "-v",
                     "--output",
                     "sys.txt",
@@ -236,6 +235,9 @@
                     ">",
                     "output.txt"
                 ]
+            },
+            "presentation": {
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
@@ -264,9 +266,8 @@
             "label": "Compile and run go program",
             "type": "shell",
             "linux": {
-                "command": "",
+                "command": "go",
                 "args": [
-                    "go",
                     "build",
                     "${relativeFile}",
                     "&&",
@@ -285,6 +286,9 @@
                     "rm",
                     "${fileBasenameNoExtension}"
                 ]
+            },
+            "presentation": {
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
