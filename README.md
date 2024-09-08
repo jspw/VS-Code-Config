@@ -1,116 +1,76 @@
-# Make Coding Easy
+# VS Code Config
 
-**This tutorial is for linux (debian based) only <br>
-If you are a windows user then check this out [Setup VS Code for windows](windows.md)**
+![How It Looks Like](./images/vscode-in-mac.png)
 
-# 1. **VS code task config** to make **competitive programming** easy and **programme analysis** ! <br>
+## Intra
 
-[This](/Config-Files/C&C++/Linux/tasks.json) is a **.json** file which will help you to run your **cpp** file with one **click** or **shortcut**.
+This repository contains some configuration files for **VS Code** that will give you a better experience while practicing **competitive programming** in a sense of **easy input & output**.
 
-In this case , you **don't** need to write **input** in the command line or write **fopen** / **close** stuffs , programme will take input from a file **(input.txt)** automatically and give the output in another file **(output.txt)**.
-![Input Output](images/input&output.png)
+## Behind The Scene
 
-You can also find the programme **runtime status** which will help you to calculate **execution time** as well as **memory usage** and many more ! ![Time Status](images/time_status.png)
+Generally we used to use **Code Blocks** for practicing cp back then. It has everything build in. You just need to create a cpp or c file and run the code by pressing the run button. They terminal comes up and you put the inputs and get the outputs in the terminal. You might be a good coder but I had to run and test my code multiple times to get the correct output. Also I was not a fan of codeblocks as it looks very odd. And at the same time, VS Code crosses my way. Then I started using it and I found it very useful. But the problem was, I had to run the code in terminal and give inputs and get outputs. So I thought of making a configuration file that will make my life easier. And here it is.
 
-pre-requirements :
+## How It Works
 
-- Visual Studio Code
-- gcc/g++
-- time
-  - install time : `sudo apt install time`
+VS Code has some way of doing things. It has a concept of Work Spaces.You can open a folder as workspace and do your stuffs. You can also configure the work space according to your need. There is a `.vscode` folder in the workspace folder where you can put your configuration files. `settings.json` is the settings for your current workspace and another important file is `tasks.json` file which can be configured to build & run your code with some shortcuts. We have used this `tasks.json` file to make our life easier.
 
-## Let's setup
+Basically we can set the commands that will run when the shortcut is being used. So, the config file includes building, running the code and then taking input from a file and giving output to another file. So, you just need to write your code, give inputs in the input file and press the shortcut. You will get the output in the output file.
 
-Note : **You just need to do these things only for the first time of your workspace!**
+## Supported OS
 
-- Split screen in 3 sections
+- Windows
+- Linux
+- MacOS
 
-  - split the main section in right (right mouse click on the .cpp file and u will get the split options)
-  - then split the right into down (same as above)
+## Available Language Configurations
 
-![Split SS](/images/split%20options.png)
+- [C/C++](Config-Files/C&C++/)
+- [Python](Config-Files/Python/)
+- [Java](Config-Files/Java/)
+- [Dart](Config-Files/Dart/)
+- [Go](Config-Files/Go/)
 
-- create a file named `input.txt` and save it in the same folder
-- create a file named `output.txt` and save it in the same folder
-- open input.txt into the upper right section
-- open output.txt into the lower right section
+## How To Configure
 
-#### This will be the final look of your vs code
+- [Windows](./windows.md)
+- [Linux](./linux.md)
+- [MacOS](./mac.md)
 
-![VS Code Final Look](/images/final%20look%20%20vs%20code.png)
+**Note:** The readme files are written for C/C++ only. You can follow the same steps for other languages too.
 
-### How to setup
+## How To Use
 
-- Go to Configure Default Build Task...
+- Open your workspace **Folder** where you will code your shits.
+  - Open VS Code, then you can go to `Menu -> File -> Open Folder ...`
+  ![FILE | MENU](/images/top_bar.png)
+  ![Choose Folder](/images/open_folder.png)
+- Create your `.c` or `.cpp` file, write code and give inputs in `input.txt` and press `Ctrl+Shift+b` and your output will be in the `output.txt` file.
 
-  - In Menu bar
+### Notes
 
-    - Click on Terminal (At the left top bar )
-      ![Top Bar](/images/top_bar.png)
-    - select configure task
-    - select create task.json from template (this will create a task.json file in .vscode in your working directory)
-    - select other and new task.json file will be created
-    - now copy and paste the `task.json` { [link is here](/Config-Files/C&C++/Linux/tasks.json) } file into your `task.json` file
-    - done
+- Make sure your mouse cursor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+- I have came to know that some new comers or vscode users sometimes just open the file in vscode instead of opening as folder and press `Ctrl+Shift+b` which will not work. So please open vscode in your desired folder.
 
-## Usage
-
-- Run :
-  - Shortcut type : **`ctrl+shift+b`**
-- You need to give the input in the **input.txt** file
-- output will be shown in the **output.txt** file
-
-**Note :** Make sure your mouse cursor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
-
-![Input Output](images/input&output.png)
-
-- **Bonus** : programme status will be shown in the **sys.txt** file
-- People concern about more details such as **binary form** and **disassemble code** can check `tasks(extra).json` file [Link](</Config-Files/C&C++/Linux/tasks(extra).json>)
-
-# In the Repository i have also added *config* files for other Programming Languages too
-
-- `task.json` files for :
-
-  - Python :
-
-    - [Windows File](Config-Files/Python/Windows/tasks.json)
-    - [Linux File](Config-Files/Python/Linux/tasks.json)
-
-- Java :
-
-  - [Windows File](Config-Files/Java/Windows/tasks.json)
-  - [Linux File](Config-Files/Java/Linux/tasks.json)
-
-- Dart :
-
-  - [Windows File](Config-Files/Dart/Windows/tasks.json)
-  - [Linux File](Config-Files/Dart/Linux/tasks.json)
-
-- Go :
-  - [Linux File](Config-Files/go/Linux/tasks.json)
-
-**Note :** Here, I have merged all the files which includes tasks.json file for Python, C, C++, Java and Dart for both Windows and Linux! [Here is the Link](/Config-Files/all-in-one/tasks.json)
-
-# 2. VS CODE Snippet
+# VS CODE Snippets
 
 **This one is made for my personal usage, you can add functions as you wish and edit my name and doc.**
 
-- Select User Snippets under **File** (at Left top bar) > **Preferences (Code > Preferences on macOS)**, and then select **cpp.json**
+## Setup
+
+- Select User Snippets (at top menubar, File/Code [for **mac**] > Preferences > User Snippets) and then select **cpp.json**.
   ![Top Bar](/images/top_bar.png)
-- copy or replace the cpp.json file {[Link](/Snippets/cpp.json)} and save !
+- copy or replace the [cpp.json file](./Snippets/cpp.json) and save.
 
 ## Usage
 
 - Creating a cpp file if you type **inc** and press **Tab** in your keyboard the **snippet** will load as i have set **prefix** as **inc** in my **json file** . (**You can edit as your own !**)
 - This will make programming easy and fast .
 
-# In the Repository i have also added *config* files for other Programming Languages too
+## Snippets
 
-- **Snippets** for :
+- [C++](/Snippets/cpp.json)
+- [Python](/Snippets/python.json)
+- [Dart](/Snippets/dart.json)
+- [Java](/Snippets/java.json)
 
-  - [C/C++](/Snippets/cpp.json)
-  - [Python](/Snippets/python.json)
-  - [Dart](/Snippets/dart.json)
-  - [Java](/Snippets/java.json)
-
-## Happy Coding with VS Code
+Happy coding :3

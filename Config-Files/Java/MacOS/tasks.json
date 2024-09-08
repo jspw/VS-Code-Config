@@ -1,0 +1,58 @@
+// Author : Mehedi Hasan Shifat
+// Date : 17th Oct,2020
+// Updated At : 9th Sept, 2024 05:10:20 AM
+// Task : shortcut to run a java file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time (MacBook)
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run C program",
+            "type": "shell",
+            "command": "",
+            "args": [
+                "javac",
+                "${relativeFile}",
+                "-d",
+                "${workspaceFolder}",
+                "&&",
+                "/usr/bin/time",
+                "-o",
+                "analysis.txt",
+                "timeout",
+                "5",
+                "java",
+                "${fileBasenameNoExtension}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "&&",
+                "rm",
+                "-rf",
+                "*.class"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
