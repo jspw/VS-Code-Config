@@ -20,7 +20,7 @@ Basically we can set the commands that will run when the shortcut is being used.
 
 - Windows
 - Linux
-- Mac
+- MacOS
 
 ## Available Language Configurations
 
@@ -34,7 +34,9 @@ Basically we can set the commands that will run when the shortcut is being used.
 
 - [Windows](./windows.md)
 - [Linux](./linux.md)
-- [Mac](./mac.md)
+- [MacOS](./mac.md)
+
+**Note:** The readme files are written for C/C++ only. You can follow the same steps for other languages too.
 
 ## How To Use
 
