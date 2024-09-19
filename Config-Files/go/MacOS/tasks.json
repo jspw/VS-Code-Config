@@ -1,0 +1,53 @@
+// Author : Mehedi Hasan Shifat
+// Date : Thu Sep 19 17:47:19 +06 2024
+// Task : shortcut to run a golang file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time (MacBook)
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run Golang programs",
+            "type": "shell",
+            "command": "",
+            "args": [
+                "/usr/bin/time",
+                "-o",
+                "analysis.txt",
+                "timeout",
+                "5",
+                "go",
+                "run",
+                "${relativeFile}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "&&",
+                "rm",
+                "-rf",
+                "*.class"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "go",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
