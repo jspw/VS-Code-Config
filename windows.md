@@ -157,7 +157,7 @@ In the Repository i have also added *config* files for other Programming Languag
     - [Linux File](Config-Files/Dart/Linux/tasks.json)
 
   - Go :
-    - [Linux File](Config-Files/go/Linux/tasks.json)
+    - [Linux File](Config-Files/Golang/Linux/tasks.json)
 
 # VS CODE Snippet
 

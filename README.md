@@ -28,7 +28,7 @@ Basically we can set the commands that will run when the shortcut is being used.
 - [Python](Config-Files/Python/)
 - [Java](Config-Files/Java/)
 - [Dart](Config-Files/Dart/)
-- [Go](Config-Files/Go/)
+- [Go](Config-Files/Golang/)
 
 ## How To Configure
 
