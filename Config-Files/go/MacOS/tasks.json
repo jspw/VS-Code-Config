@@ -20,11 +20,7 @@
                 "<",
                 "input.txt",
                 ">",
-                "output.txt",
-                "&&",
-                "rm",
-                "-rf",
-                "*.class"
+                "output.txt"
             ],
             "presentation": {
                 "reveal": "silent"
