@@ -9,26 +9,27 @@
       "type": "shell",
       "command": "",
       "args": [
+        "/c", // The '/c' allows CMD to execute the entire chain of commands
         "copy",
         "\"${file}\"",
         "${workspaceFolder}\\jspwTest.cpp",
         "&&",
         "g++",
-        "jspwTest.cpp",
+        "${workspaceFolder}\\jspwTest.cpp",
         "-o",
-        "jspwTest",
+        "${workspaceFolder}\\jspwTest",
         "&&",
-        "jspwTest",
+        "${workspaceFolder}\\jspwTest",
         "<",
-        "input.txt",
+        "${workspaceFolder}\\input.txt",
         ">",
-        "output.txt",
+        "${workspaceFolder}\\output.txt",
         "&&",
         "del",
-        "jspwTest.exe",
+        "${workspaceFolder}\\jspwTest.exe",
         "&&",
         "del",
-        "jspwTest.cpp"
+        "${workspaceFolder}\\jspwTest.cpp"
       ],
       "presentation": {
         "reveal": "silent"
@@ -50,6 +51,11 @@
           "column": 3,
           "severity": 4,
           "message": 5
+        }
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe" // Using CMD to run the tasks
         }
       }
     }
