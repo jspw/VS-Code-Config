@@ -6,11 +6,10 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compile and run C program",
+            "label": "Compile and run Java program",
             "type": "shell",
-            "command": "",
+            "command": "javac",
             "args": [
-                "javac",
                 "${relativeFile}",
                 "-d",
                 "${workspaceFolder}",
@@ -39,7 +38,7 @@
                 "isDefault": true
             },
             "problemMatcher": {
-                "owner": "cpp",
+                "owner": "java",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"
