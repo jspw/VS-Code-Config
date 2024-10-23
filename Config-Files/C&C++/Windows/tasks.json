@@ -9,7 +9,6 @@
       "type": "shell",
       "command": "",
       "args": [
-        "/c", // The '/c' allows CMD to execute the entire chain of commands
         "copy",
         "\"${file}\"",
         "${workspaceFolder}\\jspwTest.cpp",
@@ -55,7 +54,10 @@
       },
       "options": {
         "shell": {
-          "executable": "cmd.exe" // Using CMD to run the tasks
+          "executable": "cmd.exe", // Using CMD to run the tasks
+          "args": [
+            "/c" // Carries out the command specified by string and then terminates
+          ]
         }
       }
     }
