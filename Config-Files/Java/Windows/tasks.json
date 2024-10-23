@@ -9,12 +9,21 @@
             "type": "shell",
             "command": "",
             "args": [
-                "java",
+                "javac",
                 "${relativeFile}",
+                "-d",
+                "${workspaceFolder}",
+                "&&",
+                "java",
+                "${fileBasenameNoExtension}",
                 "<",
                 "input.txt",
                 ">",
-                "output.txt"
+                "output.txt",
+                "&&",
+                "del",
+                "-rf",
+                "*.class"
             ],
             "presentation": {
                 "reveal": "silent"
@@ -36,6 +45,15 @@
                     "column": 3,
                     "severity": 4,
                     "message": 5
+                }
+            },
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": [
+                        "/d",
+                        "/c"
+                    ]
                 }
             }
         }

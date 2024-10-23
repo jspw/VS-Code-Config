@@ -1,94 +1,113 @@
 // Author : Mehedi Hasan Shifat
 // Date : 17th Oct,2020
-// Updated At : 23rd Oct, 2024 01:16:20 AM
+// Updated At : Wednesday, October 23, 2024 14:51:20
 // Task : shortcut to run a java file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time
 // special feature: This single tasks.json file will work on mac, windows and linux (debian based) OSs.
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "Compile and run Java program",
-            "type": "shell",
-            "windows": {
-                "command": "java",
-                "args": [
-                    "${relativeFile}",
-                    "<",
-                    "input.txt",
-                    ">",
-                    "output.txt"
-                ],
-            },
-            "linux": {
-                "command": "javac",
-                "args": [
-                    "${relativeFile}",
-                    "-d",
-                    "${workspaceFolder}",
-                    "&&",
-                    "/usr/bin/time",
-                    "-o",
-                    "analysis.txt",
-                    "timeout",
-                    "5",
-                    "java",
-                    "${fileBasenameNoExtension}",
-                    "<",
-                    "input.txt",
-                    ">",
-                    "output.txt",
-                    "&&",
-                    "rm",
-                    "-rf",
-                    "*.class"
-                ]
-            },
-            "osx": {
-                "command": "javac",
-                "args": [
-                    "${relativeFile}",
-                    "-d",
-                    "${workspaceFolder}",
-                    "&&",
-                    "/usr/bin/time",
-                    "-o",
-                    "analysis.txt",
-                    "timeout",
-                    "5",
-                    "java",
-                    "${fileBasenameNoExtension}",
-                    "<",
-                    "input.txt",
-                    ">",
-                    "output.txt",
-                    "&&",
-                    "rm",
-                    "-rf",
-                    "*.class"
-                ]
-            },
-            "presentation": {
-                "reveal": "silent"
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "java",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
+      {
+        "label": "Compile and run Java program",
+        "type": "shell",
+        "windows": {
+          "command": "",
+          "args": [
+            "javac",
+            "${relativeFile}",
+            "-d",
+            "${workspaceFolder}",
+            "&&",
+            "java",
+            "${fileBasenameNoExtension}",
+            "<",
+            "input.txt",
+            ">",
+            "output.txt",
+            "&&",
+            "del",
+            "-rf",
+            "*.class"
+          ],
+          "options": {
+            "shell": {
+              "executable": "cmd.exe",
+              "args": [
+                "/d",
+                "/c"
+              ]
             }
+          }
+        },
+        "linux": {
+          "command": "javac",
+          "args": [
+            "${relativeFile}",
+            "-d",
+            "${workspaceFolder}",
+            "&&",
+            "/usr/bin/time",
+            "-o",
+            "analysis.txt",
+            "timeout",
+            "5",
+            "java",
+            "${fileBasenameNoExtension}",
+            "<",
+            "input.txt",
+            ">",
+            "output.txt",
+            "&&",
+            "rm",
+            "-rf",
+            "*.class"
+          ]
+        },
+        "osx": {
+          "command": "javac",
+          "args": [
+            "${relativeFile}",
+            "-d",
+            "${workspaceFolder}",
+            "&&",
+            "/usr/bin/time",
+            "-o",
+            "analysis.txt",
+            "timeout",
+            "5",
+            "java",
+            "${fileBasenameNoExtension}",
+            "<",
+            "input.txt",
+            ">",
+            "output.txt",
+            "&&",
+            "rm",
+            "-rf",
+            "*.class"
+          ]
+        },
+        "presentation": {
+          "reveal": "silent"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": {
+          "owner": "java",
+          "fileLocation": [
+            "relative",
+            "${workspaceRoot}"
+          ],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
         }
+      }
     ]
-}
+  }
