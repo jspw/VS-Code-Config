@@ -2,13 +2,17 @@
 
 ![How It Looks Like](./images/vscode-in-mac.png)
 
-## Intra
+## Intro
 
-This repository contains some configuration files for **VS Code** that will give you a better experience while practicing **competitive programming** in a sense of **easy input & output**.
+This repository contains some configuration files for [Visual Studio Code](https://code.visualstudio.com/) that will give you a better experience while practicing **competitive programming** in a sense of **easy input & output**.
 
-## Behind The Scene
+## Back Story
 
-Generally we used to use **Code Blocks** for practicing cp back then. It has everything build in. You just need to create a cpp or c file and run the code by pressing the run button. They terminal comes up and you put the inputs and get the outputs in the terminal. You might be a good coder but I had to run and test my code multiple times to get the correct output. Also I was not a fan of codeblocks as it looks very odd. And at the same time, VS Code crosses my way. Then I started using it and I found it very useful. But the problem was, I had to run the code in terminal and give inputs and get outputs. So I thought of making a configuration file that will make my life easier. And here it is.
+Generally we used to use [Code Blocks](https://www.codeblocks.org/) for practicing competitive programming back then (2018). 
+
+It has everything build in there. You just need to create the `.cpp` or `.c` file and run the code by pressing the run button. Then the terminal came up and you put the inputs and get the outputs in the terminal there.
+
+You might be a good coder but I had to run and test my code multiple times to get the correct output. Also I was not a fan of codeblocks as it looks very odd. And at the same time, VS Code also crosses my way. Then I started using it and I found it very useful. But the problem was, I had to run the code in terminal and give inputs and get outputs. So I thought of making a configuration file that will make my life easier. And here it is.
 
 ## How It Works
 
@@ -36,19 +40,24 @@ Basically we can set the commands that will run when the shortcut is being used.
 - [Linux](./linux.md)
 - [MacOS](./mac.md)
 
-**Note:** The readme files are written for C/C++ only. You can follow the same steps for other languages too.
+**Note:** The README files are written for **C/C++** only. You can follow the same steps for other languages too.
 
 ## How To Use
 
-- Open your workspace **Folder** where you will code your shits.
-  - Open VS Code, then you can go to `Menu -> File -> Open Folder ...`
-  ![FILE | MENU](/images/top_bar.png)
-  ![Choose Folder](/images/open_folder.png)
-- Create your `.c` or `.cpp` file, write code and give inputs in `input.txt` and press `Ctrl+Shift+b` and your output will be in the `output.txt` file.
+- Open your workspace **Folder** where you will code your shit.
+  
+  - Open VS Code window
+  - Then you can go to `Menu -> File -> Open Folder ...`
+    ![FILE | MENU](/images/top_bar.png)
+    ![Choose Folder](/images/open_folder.png)
+
+- Create your `.c` or `.cpp` file, 
+- Write code and give inputs in `input.txt` file
+- Press `Ctrl+Shift+b` and your output will be in the `output.txt` file.
 
 ### Notes
 
-- Make sure your mouse cursor is **clicked** or **focused** on the **cpp file** editor while you are running your code.
+- Make sure your mouse cursor is **clicked** or **focused** on the **cpp file** editor while you are pressing the shortcuts
 - I have came to know that some new comers or vscode users sometimes just open the file in vscode instead of opening as folder and press `Ctrl+Shift+b` which will not work. So please open vscode in your desired folder.
 
 # VS CODE Snippets
