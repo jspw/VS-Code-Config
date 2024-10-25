@@ -14,21 +14,21 @@
         "${workspaceFolder}\\jspwTest.cpp",
         "&&",
         "g++",
-        "${workspaceFolder}\\jspwTest.cpp",
+        "jspwTest.cpp",
         "-o",
-        "${workspaceFolder}\\jspwTest",
+        "jspwTest",
         "&&",
-        "${workspaceFolder}\\jspwTest",
+        "jspwTest",
         "<",
-        "${workspaceFolder}\\input.txt",
+        "input.txt",
         ">",
-        "${workspaceFolder}\\output.txt",
+        "output.txt",
         "&&",
         "del",
-        "${workspaceFolder}\\jspwTest.exe",
+        "jspwTest.exe",
         "&&",
         "del",
-        "${workspaceFolder}\\jspwTest.cpp"
+        "jspwTest.cpp"
       ],
       "presentation": {
         "reveal": "silent"
