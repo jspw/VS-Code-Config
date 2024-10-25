@@ -51,6 +51,14 @@
           "severity": 4,
           "message": 5
         }
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe", // Using CMD to run the tasks
+          "args": [
+            "/c" // Carries out the command specified by string and then terminates
+          ]
+        }
       }
     }
   ]
