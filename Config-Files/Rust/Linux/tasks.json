@@ -1,0 +1,58 @@
+// Author : Mehedi Hasan Shifat
+// data: 20th Dec, 2024
+// Task: shortcut to run a rust code which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run Rust with rustc",
+            "type": "shell",
+            "command": "rustc",
+            "args": [
+                "${relativeFile}",
+                "-o",
+                "${fileBasenameNoExtension}",
+                "&&",
+                "clear",
+                "&&",
+                "timeout",
+                "10",
+                "/usr/bin/time",
+                "-v",
+                "--output",
+                "sys.txt",
+                "./${fileBasenameNoExtension}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "&&",
+                "rm",
+                "${fileBasenameNoExtension}"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "rs",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            },
+            "detail": "Compiles and runs the Rust program using rustc with input and output redirection."
+        }
+    ]
+}
