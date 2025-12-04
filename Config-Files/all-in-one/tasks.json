@@ -309,6 +309,38 @@
                     "message": 5
                 }
             }
+        },
+        // For 
+        // rust 
+        // Programs 
+        {
+            "label": "Compile and run Rust program",
+            "type": "shell",
+            "linux": {
+                "command": "rustc ${relativeFile} && (/usr/bin/time -lp ./${fileBasenameNoExtension} < $INPUT_FILE > $OUTPUT_FILE 2> $TIME_FILE) && rm -f ${fileBasenameNoExtension}",
+            },
+            "macos": {
+                "command": "rustc ${relativeFile} && (/usr/bin/time -lp ./${fileBasenameNoExtension} < $INPUT_FILE > $OUTPUT_FILE 2> $TIME_FILE) && rm -f ${fileBasenameNoExtension}",
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$rustc",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "INPUT_FILE": "input.txt",
+                    "OUTPUT_FILE": "output.txt",
+                    "TIME_FILE": "time.txt"
+                }
+            }
         }
     ]
 }
