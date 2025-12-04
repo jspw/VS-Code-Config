@@ -81,35 +81,6 @@ Your Default Folder (Workspace)
 
 - Now replace or copy-paste full [tasks.json of the repository](./Config-Files/C&C++/Windows/tasks.json) with your `tasks.json` file.
 
-#### Terminal Setup
-
-(Select **Command Prompt** as default terminal in vscode (If its not set already))
-
-  ![CMD](./images/terminal_window.png)
-
-- open terminal in vs code
-
-- at the right side of terminal window section there are some options like default terminal name (mine is already cmd), + v, split terminal sign,delete, ^, x. Select `v` beside `+` sign.
-
-  ![Terminal Options](./images/terminal_options.png)
-
-- select `select default profile`
-
-  ![Default Profile Selection](./images/select_default_profile.png)
-
-- a select prompt will pop up at the top and select `command prompt`
-  ![Profile Options](./images/profile_options.png)
-
-- close terminal clicking on delete icon
-
-  ![Terminal Delete](./images/delete_terminal.png)
-
-- then reopen terminal and you will find cmd as your default terminal.
-
-  ![CMD as Default Terminal](./images/default_terminal_cmd.png)
-
-- Done :D
-
 #### More things to do
 
 - Split screen in 3 sections
