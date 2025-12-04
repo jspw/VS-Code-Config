@@ -1,7 +1,5 @@
 # VS Code Config
 
-![How It Looks Like](./images/vscode-in-mac.png)
-
 > [!IMPORTANT]
 > _**Newly Added Support for RUST**_
 >
@@ -10,6 +8,8 @@
 > - [Linux File](Config-Files/Rust/Linux/tasks.json)
 > - [MacOS File](Config-Files/Rust/MacOS/tasks.json)
 >
+
+![How It Looks Like](./images/vscode-in-mac.png)
 
 ## Intro
 
