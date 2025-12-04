@@ -1,0 +1,32 @@
+// Author : Mehedi Hasan Shifat (jspw)
+// Created At : Thu Dec  4 23:59:51 +06 2025
+// Task : shortcut to run a rust file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time (MacBook)
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile and run Rust program (capture output)",
+            "type": "shell",
+            "command": "rustc ${relativeFile} && (/usr/bin/time -lp ./${fileBasenameNoExtension} < $INPUT_FILE > $OUTPUT_FILE 2> $TIME_FILE) && rm -f ${fileBasenameNoExtension}",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$rustc",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "INPUT_FILE": "input.txt",
+                    "OUTPUT_FILE": "output.txt",
+                    "TIME_FILE": "time.txt"
+                }
+            }
+        }
+    ]
+}
