@@ -1,5 +1,14 @@
 # Make Coding Easy
 
+> [!IMPORTANT]
+> _**Newly Added Support for RUST**_
+>
+> Rust :
+>
+> - [Linux File](Config-Files/Rust/Linux/tasks.json)
+> - [MacOS File](Config-Files/Rust/MacOS/tasks.json)
+>
+
 **This doc is for linux (debian based) only. If you are a windows user then check this out [Setup VS Code for windows](windows.md)**
 
 # VS Code Task Config To Make Competitive Programming Easy And Programme Analysis
@@ -70,7 +79,7 @@ This will be the final look of your vs code:
 - **Bonus** : programme status will be shown in the **sys.txt** file
 - People concern about more details such as **binary form** and **disassemble code** can check `tasks(extra).json` file [Link](</Config-Files/C&C++/Linux/tasks(extra).json>)
 
-## In the Repository I have also added *config* files for other Programming Languages too
+## In the Repository I have also added _config_ files for other Programming Languages too
 
 - `task.json` files for :
 
@@ -91,6 +100,10 @@ This will be the final look of your vs code:
 
   - Go :
     - [Linux File](Config-Files/Golang/Linux/tasks.json)
+
+  - Rust :
+    - [Linux File](Config-Files/Rust/Linux/tasks.json)
+    - [MacOS File](Config-Files/Rust/MacOS/tasks.json)
 
 **Note :** Here, I have merged all the files which includes tasks.json file for Python, C, C++, Java and Dart for both Windows and Linux! [Here is the Link](/Config-Files/all-in-one/tasks.json)
 

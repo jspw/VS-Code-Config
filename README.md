@@ -2,13 +2,22 @@
 
 ![How It Looks Like](./images/vscode-in-mac.png)
 
+> [!IMPORTANT]
+> _**Newly Added Support for RUST**_
+>
+> Rust :
+>
+> - [Linux File](Config-Files/Rust/Linux/tasks.json)
+> - [MacOS File](Config-Files/Rust/MacOS/tasks.json)
+>
+
 ## Intro
 
 This repository contains some configuration files for [Visual Studio Code](https://code.visualstudio.com/) that will give you a better experience while practicing **competitive programming** in a sense of **easy input & output**.
 
 ## Back Story
 
-Generally we used to use [Code Blocks](https://www.codeblocks.org/) for practicing competitive programming back then (2018). 
+Generally we used to use [Code Blocks](https://www.codeblocks.org/) for practicing competitive programming back then (2018).
 
 It has everything build in there. You just need to create the `.cpp` or `.c` file and run the code by pressing the run button. Then the terminal came up and you put the inputs and get the outputs in the terminal there.
 
@@ -45,7 +54,7 @@ Basically we can set the commands that will run when the shortcut is being used.
     ![FILE | MENU](/images/top_bar.png)
     ![Choose Folder](/images/open_folder.png)
 
-- Create your `.c` or `.cpp` file, 
+- Create your `.c` or `.cpp` file,
 - Write code and give inputs in `input.txt` file
 - Press `Ctrl+Shift+b` and your output will be in the `output.txt` file.
 
