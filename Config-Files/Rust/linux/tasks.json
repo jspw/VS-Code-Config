@@ -1,32 +1,58 @@
-// Author : Mehedi Hasan Shifat (jspw)
-// Created At : Fri Dec  5 00:59:37 +06 2025
-// Task : shortcut to run a rust file which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time (Linux)
+// Author : Mehedi Hasan Shifat
+// data: 20th Dec, 2024
+// Task: shortcut to run a rust code which will take input and show output of the programme automatically with programme runtime status such as memory consume and execution time
 {
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compile and run Rust program (capture output)",
+            "label": "Compile and run Rust with rustc",
             "type": "shell",
-            "command": "rustc ${relativeFile} && (/usr/bin/time -lp ./${fileBasenameNoExtension} < $INPUT_FILE > $OUTPUT_FILE 2> $TIME_FILE) && rm -f ${fileBasenameNoExtension}",
+            "command": "rustc",
+            "args": [
+                "${relativeFile}",
+                "-o",
+                "${fileBasenameNoExtension}",
+                "&&",
+                "clear",
+                "&&",
+                "timeout",
+                "10",
+                "/usr/bin/time",
+                "-v",
+                "--output",
+                "sys.txt",
+                "./${fileBasenameNoExtension}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt",
+                "&&",
+                "rm",
+                "${fileBasenameNoExtension}"
+            ],
             "presentation": {
-                "echo": true,
-                "reveal": "silent",
-                "focus": false,
-                "panel": "shared"
+                "reveal": "silent"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": "$rustc",
-            "options": {
-                "cwd": "${workspaceFolder}",
-                "env": {
-                    "INPUT_FILE": "input.txt",
-                    "OUTPUT_FILE": "output.txt",
-                    "TIME_FILE": "time.txt"
+            "problemMatcher": {
+                "owner": "rs",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
                 }
-            }
+            },
+            "detail": "Compiles and runs the Rust program using rustc with input and output redirection."
         }
     ]
 }
